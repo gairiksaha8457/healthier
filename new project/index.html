@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthier</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a942c65c7d.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">Symptoms</a></li>
+                    <li><a href="#service">BMI Calculator</a></li>
+
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <h2> Finally you can make yourselves healthier!!!</h2>
+                <h1>
+                    Hi, We are <span>Healthier</span>.
+                </h1>
+            </div>
+        </div>
+    </div>
+    <!---------------about---------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+
+                <div class="about-col-2">
+                    <h1 class="sub-title">Symptoms </h1><br><br>
+                    <p style="font-size: 20px;"> As a health app, we help you monitor and improve your overall
+                        well-being. We track your activities, provide nutrition insights, monitor your sleep patterns,
+                        and offer support for mental health. We also assist with managing chronic conditions, offer
+                        fitness challenges, and connect you with a supportive community. Let's work together to achieve
+                        your health goals!</p>
+                    <br><br>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link " onclick="opentab('skills')">Protein-Energy Malnutrition (PEM)
+                        </p>
+                        <p class="tab-links" onclick="opentab('experience')">Micronutrient Deficiencies</p>
+                        <p class="tab-links" onclick="opentab('education')">Obesity</p>
+                        <p class="tab-links" onclick="opentab('interests')">Hidden Hunger</p>
+
+                        <p class="tab-links" onclick="opentab('languages')">Overweight</p>
+
+
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ol>
+                            <li>Severe weight loss and wasting of muscle and fat tissues, leading to a skeletal
+                                appearance.</span><br></li>
+                            <li>Visible ribs, spine, and bones due to extreme thinness.</span><br></li>
+                            <li>Loose and wrinkled skin.</span><br></li>
+                            <li>Delayed growth and development in children.</span><br></li>
+                            <li>Chronic diarrhea and recurrent infections due to a weakened immune system.</span><br>
+                            </li>
+                            <li>Loss of muscle mass, particularly in the limbs.</span><br></li>
+                            <li>Changes in skin and hair pigmentation.</span><br></li>
+                            <li>Irritability and changes in behavior</span><br></li>
+                        </ol>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ol>
+                            <li><span>Night blindness or difficulty seeing in low light.</span><br></li>
+                            <li><span></span>Pale skin and pale conjunctiva (the inner lining of the eyelids).<br></li>
+                            <li><span></span>Impaired cognitive function and delayed development in children.<br></li>
+                            <li><span></span>Bone fractures or increased risk of fractures.<br></li>
+                            <li><span></span>Memory problems and difficulty concentrating.<br></li>
+                            <li><span></span>Impaired immune function, leading to increased susceptibility to
+                                infections.<br></li>
+                            <li><span></span>Poor growth and development in children.</li>
+
+                        </ol>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ol>
+                            <li><span>Increased Body Weight.</span><br></li>
+                            <li><span></span>Visible Fat Accumulation<br></li>
+                            <li><span></span>Shortness of Breath<br></li>
+                            <li><span></span>Fatigue<br></li>
+                            <li><span></span>Joint Pain<br></li>
+                            <li><span></span>Sleep Disorders<br></li>
+                            <li><span></span>High Blood Pressure</li>
+                            <li><span></span>High Cholesterol and Triglycerides</li>
+                            <li><span></span>Type 2 Diabetes</li>
+                            <li><span></span>Gastrointestinal Problems</li>
+                            <li><span></span>Psychological Effects</li>
+                            <li><span></span>Reduced Mobility</li>
+                        </ol>
+                    </div>
+                    <div class="tab-contents" id="interests">
+                        <ol>
+                            <li><span>Fatigue and Weakness</span><br></li>
+                            <li><span></span>Impaired Immune Function<br></li>
+                            <li><span></span>Delayed Growth and Development<br></li>
+                            <li><span></span>Skin and Hair Problems<br></li>
+                            <li><span></span>Brittle Nails and Oral Health Issues<br></li>
+                            <li><span></span>Vision Problems<br></li>
+                            <li><span></span>Anemia</li>
+                            <li><span></span>Mental Health Issues</li>
+                            <li><span></span>Bone Health Complications</li>
+                            <li><span></span>Cognitive Impairments</li>
+
+                        </ol>
+                    </div>
+                    <div class="tab-contents" id="languages">
+                        <ol>
+                            <li><span></span>Increased Body Weight<br></li>
+                            <li><span></span>Clothing Tightness<br></li>
+                            <li><span></span>Fatigue and Reduced Stamina<br></li>
+                            <li><span></span>Shortness of Breath<br></li>
+                            <li><span></span>Joint Pain<br></li>
+                            <li><span></span>Increased Risk of Chronic Diseases<br></li>
+                            <li><span></span>Gastrointestinal Issues<br></li>
+                            <li><span></span>Reduced Mobility<br></li>
+                            <li><span></span>Sleep Disruptions<br></li>
+
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--------------BMI------------->
+
+    <div class="maindiv" id="service">
+
+        <div class="container">
+            <h1>BMI Calculator</h1>
+            <br>
+            <p>Height (cm)</p>
+            <input type="number" id="height">
+            <br><br><br>
+            <p>Weight (kg)</p>
+            <input type="number" id="weight">
+
+            <button class="calcbtn" id="btn">Calculate</button>
+            <div id="result" style="font-size: 24px"></div>
+            <button id="btnres">Diet Plan for Non-Veg</button>
+            <button id="btnres1">Diet Plan for Veg</button>
+        </div>
+    </div>
+    <!------------contact-------------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-regular fa-envelope"></i>healthier@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>+91-1234567890</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href="#"><i class="fa-brands fa-github"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-solid fa-code"></i></a>
+                    </div>
+
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Team Healthier. <i class="fa-solid fa-bolt"></i> Healthier Fitness Website</p>
+        </div>
+    </div>
+
+
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+    <script>
+        const scriptURL =
+            'https://script.google.com/macros/s/AKfycbyBSyiaiRSpJ-wHg8bzGXcfN7gC7hi53ylJR5YhiqhI3Ds1Gi-_cpedBSxRMXPLeOxb/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, {
+                    method: 'POST',
+                    body: new FormData(form)
+                })
+                .then(response => {
+                    msg.innerHTML = "Messege sent successfully"
+                    setTimeout(function () {
+                        msg.innerHTML = " "
+                    }, 5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+    <script>
+        window.onload = () => {
+            const button = document.querySelector('#btn');
+            button.addEventListener('click', calculateBmi)
+        }
+
+        function calculateBmi() {
+            const height = document.querySelector('#height').value;
+            const weight = document.querySelector('#weight').value;
+            const result = document.querySelector('#result');
+
+            if (!height || isNaN(height) || height < 0) {
+                result.innerText = "Please provide a valid height";
+                return;
+            } else if (!weight || isNaN(weight) || weight < 0) {
+                result.innerText = "Please provide a valid weight";
+                return;
+            }
+
+            const bmi = (weight / ((height * height) / 10000)).toFixed(2);
+
+            const button1 = document.querySelector('#btnres');
+            button1.addEventListener('click', show);
+
+            function show() {
+
+
+
+                if (bmi < 18.5) {
+                    (new Audio('music1.mp3')).play();
+                    window.open('underweight.html', "_blank");
+                } else if (bmi >= 18.5 && bmi < 24.9) {
+                    (new Audio('music2.mp3')).play();
+                    window.open('normalweight.html', "_blank");
+                } else {
+                    (new Audio('music3.mp3')).play();
+                    window.open('overweight.html', "_blank");
+                }
+            }
+            button2 = document.querySelector('#btnres1');
+            button2.addEventListener('click', show1);
+
+            function show1() {
+
+
+
+                if (bmi < 18.5) {
+                    (new Audio('music1.mp3')).play();
+
+                    window.open('underweightveg.html', "_blank");
+                } else if (bmi >= 18.5 && bmi < 24.9) {
+                    (new Audio('music2.mp3')).play();
+                    window.open('normalweightveg.html', "_blank");
+                } else {
+                    (new Audio('music3.mp3')).play();
+                    window.open('overweightveg.html', "_blank");
+                }
+            }
+
+
+            if (bmi < 18.5) {
+                result.innerText = `Under Weight: ${bmi}`;
+
+            } else if (bmi >= 18.5 && bmi < 24.9) {
+                result.innerText = `Normal: ${bmi}`;
+
+            } else if (bmi >= 25 && bmi < 29.9) {
+                result.innerText = `Over Weight: ${bmi}`;
+
+            } else if (bmi >= 30 && bmi < 34.9) {
+                result.innerText = `Obesity (Class I): ${bmi}`;
+            } else if (bmi >= 35.5 && bmi < 38.9) {
+                result.innerText = `Obesity (Class II) : ${bmi}`;
+            } else {
+                result.innerText = `Extreme Obesity: ${bmi}`;
+            }
+        }
+    </script>
+</body>
+
+</html>
