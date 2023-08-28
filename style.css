@@ -415,7 +415,9 @@ nav .fa-solid{
     }
 
     #header{
-        background:white;
+       object-fit: cover;
+        width: auto;
+        height:auro
     }
     .logo {
         width: 50%;
